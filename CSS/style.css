@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;     
+}
+
+
+/*----------------------HEADER Y NAVEGACION---------------------------------------*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Courier New', Courier, monospace;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.lista-nav {
+    display: flex;
+    list-style: none;
+    gap: 3em;
+    padding-right: 10em;
+}
+
+.lista-nav > li > a {
+    text-decoration: none;
+    color: #0f0f0f;
+    font-family: 'lato', sans-serif;
+}
+
+.lista-nav > li > a:hover {
+    color: #fd04bf;
+    transition: all 0.5s ease; 
+}
+
+.logo {
+    padding-left: 10em;
+}
+
+.logo > a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #0f0f0f;
+}
+
+.logo > a:hover {
+    color: #fd04bf;
+}
+/*----------------------HEADER Y NAVEGACION---------------------------------------*/
+
+/*-----------------------------CONTENIDO ABAJO------------------------------------*/
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
+.nost{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    background: rgb(241,240,145);
+    background: linear-gradient(169deg, rgba(241,240,145,1) 0%, rgba(220,252,147,1) 35%, rgba(253,255,246,1) 100%);
+}
+.nost > h1 {
+    font-family: kranky, sans-serif;
+    color: #333;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 3em; 
+}
+
+.nost > p {
+    font-family: 'sour gummy', Courier, monospace;
+    color: #333;
+    margin: 1em;
+    font-size: 1em;
+    text-align: center;
+
+}
+
+.nost > h1:hover{
+    filter: drop-shadow(0 0 5px #fd04bf);
+    transition: all 0.5s ease;
+}
+@media (max-width: 768px) {
+    .nost > h1 {
+        font-size: 2.5em;
+        margin-top: 3.5em;
+        margin-bottom: 0.2em;
+    }
+}
+.nail-vid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    
+}
+.nail-vid > h2 {
+    font-family: kranky, sans-serif;
+    color: #333;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+.nail-vid > h2:hover{
+    filter: drop-shadow(0 0 5px #fd04bf);
+    transition: all 0.5s ease;
+}
+
+.nail-vid > iframe{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+@media (max-width: 768px) {
+    .nail-vid > h2 {
+        font-size: 2.5em;
+        margin-top: 6em;
+        margin-bottom: 0.5em;
+        text-align: center;
+    }
+}
+
+/*____________________________CONTENIDO ABAJO______________________________________________________*/
+
+/*___________________________________RESEÑAS_________________________________________*/
+.reseñas-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: kranky, sans-serif;
+    color: #333;
+    margin-top: 1em;
+    font-size: 3em;
+
+}
+
+.reseñas-title:hover{
+    filter: drop-shadow(0 0 5px #fd04bf);
+    transition: all 0.5s ease;
+}
+
+
+.reseñas-container {
+    display: flex;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.reseñas-container > div{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: 2s ease;
+}
+.reseñas-container > div:hover{
+    cursor: pointer;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 230px;
+    background-color: #eea3cf65;
+    border-radius: 8px;
+    box-shadow: 0 4px 5px #fd04bf;
+    gap: 1em;
+}
+.testimonial > p {
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    margin: 0.5em;
+    font-size: 1em;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .reseñas-container > div{
+        width: 30%;
+        object-fit: cover;
+        opacity: .8;
+        transition: 2s ease;
+    }
+    .reseñas-container > div:hover{
+        
+        filter: contrast(120%);
+    }
+}
+    
+
+
+
+
+
+
+
+
+/*___________________________________RESEÑAS_________________________________________*/
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .lista-nav {
+        flex-direction: column;
+        padding-right: 0; 
+        gap: 1em; 
+        background-color: #fff; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 100%; 
+        position: absolute;
+        top: 10vh; 
+        left: 0; 
+        z-index: 0; 
+        text-align: center;
+    }
+
+    .logo {
+        padding-left: 0; 
+        margin-bottom: 1em; 
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .lista-nav {
+        padding-right: 5em; 
+        gap: 2em; 
+    }
+
+    .logo {
+        padding-left: 5em;
+    }
+}

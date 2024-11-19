@@ -1,0 +1,56 @@
+body{
+    background: rgb(241,240,145);
+    background: linear-gradient(169deg, rgba(241,240,145,1) 0%, rgba(220,252,147,1) 35%, rgba(253,255,246,1) 100%);
+}
+/*----------------------NUESTROS PRODUCTOS--------ABAJO-------------------------------*/
+.products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: kranky, sans-serif;
+    color: #333;
+    margin-top: 1em;
+    font-size: 3em;
+}
+.products:hover{
+    filter: drop-shadow(0 0 5px #fd04bf);
+    transition: all 0.5s ease;
+}
+@media (max-width: 768px) {
+    .products {
+        font-size: 2.5em;
+        margin-top: 3.5em;
+        margin-bottom: 0.2em;
+    }
+}
+/*----------------------NUESTROS PRODUCTOS---------ARRIBA------------------------------*/
+.cards-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5em;
+    padding: 20px;
+}
+
+.item-cards {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.item-cards img {
+    width: 100%; 
+    height: 80%; 
+}
+
+.item-cards:hover {
+    transform: scale(1.05);
+}
+
+.product-description {
+    padding: 10px;
+    font-size: 1.2em;
+    color: #333; 
+}

@@ -3,36 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> P Y D</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/product-style.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kranky&family=Lexend+Zetta:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kranky&family=Lexend+Zetta:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>MC-Nails</title>
 </head>
 <body>
     
-    <header>
-        <img src="imagenes/james-wheeler-HJhGcU_IbsQ-unsplash.jpg" alt="pesca">
-        <h1>pesca deportiva</h1>
+    <header class="header">
         
-        <nav>
-            <ul>
-                <li>nosotros</li>
-                <li>contacto</li>
-                <li>donaciones</li>
+        <h2 class="logo"><a href="../pages/contact.html">MCN</a></h2>
+        
+        <nav class="navigator">
+            <ul class="lista-nav">
+                <li class="enlaces-nav"><a href="#nosotros">nosotros</a></li>
+                <li class="enlaces-nav"><a href="pages/contact.html">contacto</a></li>
+                <li class="enlaces-nav"><a href="pages/products.html">productos</a></li>
+                <li class="enlaces-nav"><a href="#reseñas">reseñas</a></li>
             </ul>
         </nav>
     
     </header>
-    
-    <main>
-        <section>
-            <h3>mapa del estadio de boca</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3282.7555667230813!2d-58.367625524623364!3d-34.63561680918297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbombonera%20estadio!5e0!3m2!1ses-419!2sar!4v1727135245383!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-        <section>
+    <div class="container">
+        <main>
             
-            <img src="" alt="">
+            <section id="nosotros" class="nost">
+                <h1 class="title"> MC-Nails</h1>
+                <p class="parrafo-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, quae aliquam. Suscipit, beatae. Vitae beatae ut autem ducimus perferendis fugiat sapiente dicta inventore, nihil magni maxime provident voluptatum, molestias officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quam earum culpa in, impedit quidem alias officia, explicabo non necessitatibus sint id perspiciatis sit labore tempora architecto assumenda laudantium ad?</p>
+            </section>
+            
+            <section class="nail-vid">
+                <h2 class="title-vid">algunas ideas que podrian gustarte!</h2>
+                <iframe width="956" height="538" src="https://www.youtube.com/embed/o-PvHc4tw7Y" title="10 EASY FALL NAIL IDEAS-BEGINNERS | NAIL ART COMPILATION" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+            
+            
+            <h2 class="reseñas-title">Reseñas</h2>
+            <section id="reseñas" class="reseñas-container">
+                
+                
+                <div class="testimonial">
+                    <p>"Excelente servicio y productos de alta calidad. ¡Recomiendo MC-Nails a todos!"</p>
+                    <span>- Silvana</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Excelente servicio, atencion y exelente precio. ¡Recomiendo MC-Nails a todos!"</p>
+                    <span>- Andrea</span>
+                </div>
+                <div class="testimonial">
+                    <p>"atencion espectacular y super amable!. ¡Recomiendo MC-Nails a todos!"</p>
+                    <span>- Paloma</span>
+                </div>
+
+            </section>
+        </main>
         
-        </section>
-    </main>
-    
-    <footer></footer>
+        <footer>
+                <div class="footer-content">
+                    <div class="social-links">
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img src="./IMAGES/instagram_2111463.png" alt=""></a>
+                        <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer"><img src="./IMAGES/tik-tok_3670132.png" alt=""></a>
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer"><img src="./IMAGES/twitter_5968830.png" alt=""></a>
+                    </div>
+                    <p>&copy; 2023 MC-Nails. Todos los derechos reservados.</p>
+                </div>
+        </footer>
+    </div>
 </body>
 </html>

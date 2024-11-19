@@ -1,7 +1,7 @@
-hola, vamos a crear una web donde se comente como desempeñar esta actividad deportiva de tal manera que sea,
-amigable con la fauna y flora donde nos encontremos, proporcionando datos  sobre equipos apropiados, medidas de seguridad, y haciendo enfasis en todas las modalidades que hacen un daño inmenso a la naturaleza.
-para eso vamos a:
-    .crear un menu de navegacion(con contacto, y +)
-    .un main donde se encuentre informacion, imagenes, videos, etc
-    .un footer con enlaces a redes sociales.
-    
+-se trata de una web donde en un futuro va a ser para mi hermana
+-se tratro utilizar display flex, grid y media query para la parte resposinve y de maquetacion
+-se utilizaron fuentes de google font, iframe traidos de youtube
+ faltan cosas (+contenido, diseño, estetica) y cualquier sujerencia que puedan darme.
+
+-utilize y me guie en una extencion de chrome que es un visualizador con muchisimos modelos
+ de moviles y tabletas.
