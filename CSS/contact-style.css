@@ -1,17 +1,21 @@
 
 .contact-body{
-    background: rgb(241,240,145);
-    background: linear-gradient(169deg, rgba(241,240,145,1) 0%, rgba(220,252,147,1) 35%, rgba(253,255,246,1) 100%);
+    background: #E5E3E4;
+    
+    height: auto;/*agregado*/
 }
 
+
 .contact-background {
-    backdrop-filter: 5px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 20px;
     border-radius: 8px;
     max-width: 600px;
     margin: 0 auto;
     box-shadow: 0 4px 5px #fd04bf;
     z-index: 1;
+    margin-bottom: 3em;/*agregado*/
 }
 
 .title-contacto {
@@ -79,4 +83,22 @@ input[type="submit"]:hover {
     }
 
 
+}
+
+.map{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.map iframe{
+    width: 75%;
+    height:30em;
+}
+
+.map iframe:hover{
+    filter: drop-shadow(0 0 5px #fd04bf);
+    transition: all 0.5s ease;
 }

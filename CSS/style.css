@@ -4,6 +4,10 @@
     box-sizing: border-box;     
 }
 
+.fond-body{
+    height: auto;
+    background: #E5E3E4;
+}
 
 /*----------------------HEADER Y NAVEGACION---------------------------------------*/
 .header {
@@ -11,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1em;
-    background-color: #fff;
+    background-color: #BBC6C8;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-family: 'Courier New', Courier, monospace;
     height: 10vh;
@@ -64,9 +68,8 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 30vh;
-    background: rgb(241,240,145);
-    background: linear-gradient(169deg, rgba(241,240,145,1) 0%, rgba(220,252,147,1) 35%, rgba(253,255,246,1) 100%);
+    height: 15em; /* original 30vh*/
+    
 }
 .nost > h1 {
     font-family: kranky, sans-serif;
@@ -100,7 +103,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 90vh;
+    height: 50em; /*original 90vh*/
     
 }
 .nail-vid > h2 {
@@ -118,6 +121,7 @@ main{
 .nail-vid > iframe{
     margin-top: 1em;
     margin-bottom: 1em;
+    height: 30em; /*original 70vh*/
 }
 @media (max-width: 768px) {
     .nail-vid > h2 {
@@ -125,6 +129,18 @@ main{
         margin-top: 6em;
         margin-bottom: 0.5em;
         text-align: center;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .nail-vid > h2 {
+        font-size: 2.5em;
+        margin-top: 10em;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+    .nail-vid > iframe{
+        margin-top: 2em;
+        margin-bottom: 6em;
     }
 }
 
@@ -204,6 +220,14 @@ main{
         filter: contrast(120%);
     }
 }
+@media (min-width: 768px) and (max-width: 992px) {
+    .reseñas-title{
+        font-size: 2.5em;
+        margin-top: 8em;
+        margin-bottom: 0;
+        text-align: center;
+    }
+}
     
 
 
@@ -237,13 +261,30 @@ main{
 
     .logo {
         padding-left: 0; 
-        margin-bottom: 1em; 
+        margin-bottom: 1em;
     }
 }
 
 
 @media (min-width: 768px) and (max-width: 992px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 15vh; 
+    }
     .lista-nav {
+        padding-right: 5em; 
+        gap: 1em; 
+    }
+
+    .logo {
+        padding-left: 5em;
+    }
+}
+
+/*
+.lista-nav {
         padding-right: 5em; 
         gap: 2em; 
     }
@@ -251,4 +292,4 @@ main{
     .logo {
         padding-left: 5em;
     }
-}
+*/
