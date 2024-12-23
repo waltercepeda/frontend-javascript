@@ -121,6 +121,8 @@ main{
 .nail-vid > iframe{
     margin-top: 1em;
     margin-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
     height: 30em; /*original 70vh*/
 }
 @media (max-width: 768px) {
@@ -129,6 +131,10 @@ main{
         margin-top: 6em;
         margin-bottom: 0.5em;
         text-align: center;
+    }
+    .nail-vid > iframe{
+        padding-left: 1em;
+        padding-right: 1em;
     }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -141,6 +147,8 @@ main{
     .nail-vid > iframe{
         margin-top: 2em;
         margin-bottom: 6em;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 }
 
